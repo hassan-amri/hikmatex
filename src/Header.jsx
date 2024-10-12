@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Navbar, Container, Nav } from "react-bootstrap";
 import "./Header.css";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 function Header() {
   const [click, setClick] = useState(false);
 
@@ -13,13 +13,16 @@ function Header() {
       <div className={click ? "main-container" : ""} onClick={() => Close()} />
       <nav className="navbar" onClick={(e) => e.stopPropagation()}>
         <div className="nav-container">
-          <Link exact to="/" className="nav-logo">
-            <span className="hikma">HIKMA</span>TEX
+          <NavLink exact to="/"  className="nav-logo">
+          
+            <span className="hikma">HIKMA<span className="tex">TEX</span></span>
+          
+            
             {/* <i className="fa fa-code"></i> */}
-          </Link>
+          </NavLink>
           <ul className={click ? "nav-menu active" : "nav-menu"}>
             <li className="nav-item">
-              <Link
+              <NavLink
                 exact
                 to="/"
                 activeClassName="active"
@@ -27,21 +30,20 @@ function Header() {
                 onClick={click ? handleClick : null}
               >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link
+              <NavLink
                 to="/about"
                 activeClassName="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}
               >
                 About
-               
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link
+              <NavLink
                 exact
                 to="/blog"
                 activeClassName="active"
@@ -49,10 +51,10 @@ function Header() {
                 onClick={click ? handleClick : null}
               >
                 Blog
-              </Link>
+              </NavLink>
             </li>
             <li className="nav-item">
-              <Link
+              <NavLink
                 exact
                 to="/contact"
                 activeClassName="active"
@@ -60,7 +62,7 @@ function Header() {
                 onClick={click ? handleClick : null}
               >
                 Contact Us
-              </Link>
+              </NavLink>
             </li>
           </ul>
           <div className="nav-icon" onClick={handleClick}>

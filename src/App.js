@@ -7,7 +7,7 @@ import About from "./About";
 
 function App() {
   return (
-    <div className="App">
+    <div className="app">
       <BrowserRouter>
         <Header />
 
