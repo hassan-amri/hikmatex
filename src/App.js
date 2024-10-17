@@ -4,6 +4,8 @@ import Header from "./Header";
 import { BrowserRouter, Route ,Routes} from "react-router-dom";
 import Home from "./Home";
 import About from "./About";
+import Footer from "./Footer";
+import Faq from "./Faq";
 
 function App() {
   return (
@@ -16,10 +18,12 @@ function App() {
             
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About/>} />
+            <Route path="/faq" element={<Faq/>} />
             {/* <Route path="/blog" component={Blog} /> */}
             {/* <Route path="/contact" component={Contact} /> */}
           </Routes>
         </div>
+        <Footer/>
       </BrowserRouter>
     </div>
   );
