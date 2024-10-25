@@ -56,7 +56,7 @@ function Header() {
             <li className="nav-item">
               <NavLink
                 exact
-                to="/contact"
+                to="/contact-us"
                 activeClassName="active"
                 className="nav-links"
                 onClick={click ? handleClick : null}

@@ -1,6 +1,9 @@
 import React from "react";
 import './Footer.css'
 import { NavLink } from "react-router-dom";
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 function Footer() {
   return <div>
     <footer className="footer-section">
@@ -50,9 +53,9 @@ function Footer() {
                             <div className="subscribe-form">
                             <div className="footer-social-icon">
                                 
-                                <a href="#"><i className="fab fa-facebook-f facebook-bg"></i></a>
-                                <a href="#"><i className="fab fa-twitter twitter-bg"></i></a>
-                                <a href="#"><i className="fab fa-google-plus-g google-bg"></i></a>
+                                <a href="#"><FacebookIcon className="socialIcon facebook"/></a>
+                                <a href="#"><InstagramIcon className="socialIcon instagram"/></a>
+                                <a href="#"><WhatsAppIcon className="socialIcon whatsapp"/></a>
                             </div>
                             </div>
                         </div>

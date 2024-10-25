@@ -13,7 +13,7 @@ function Products() {
   };
 
   return (
-    <div className="products">
+    <div className="products" id="products">
       <h2>
         <span>Our</span> Products
       </h2>

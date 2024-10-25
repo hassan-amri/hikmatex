@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Faq.css";
 import faq from "./FAQ.png";
 
@@ -43,6 +43,10 @@ const Faq = () => {
   const toggleFaq = (index) => {
     setSelectedFaq(selectedFaq === index ? null : index);
   };
+
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
 
   return (
     <div className="faq-container">

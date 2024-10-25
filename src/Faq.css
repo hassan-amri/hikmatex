@@ -23,7 +23,7 @@
   margin-bottom: 60px;
 }
 .faq__right {
-  width: 300px;
+  width: 400px;
   margin-bottom: 60px;
 }
 .faq__right img {
@@ -59,6 +59,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0;
 }
 
 .faq-icon {
@@ -79,6 +80,8 @@
   max-height: 200px; /* Adjust as needed */
   padding: 10px 10px;
 }
+
+
 
 /* Responsive Design */
 @media (max-width: 600px) {

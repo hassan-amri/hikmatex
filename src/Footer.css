@@ -158,3 +158,18 @@ ul {
   font-size: 14px;
   color: #878787;
 }
+
+
+.socialIcon{
+  border-radius: 50% !important;
+  font-size: 30px !important;
+}
+.facebook{
+  color: #3B5998;
+}
+.instagram{
+  color: #C13584;
+}
+.whatsapp{
+  color: #25D366;
+}
